@@ -1,0 +1,104 @@
+/*
+ *
+ * Support Bootstrap v5.0.0-beta2 (https://getbootstrap.com/)
+ *
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('assets/img/background.jpg');
+    background-size: cover;
+}
+
+nav {
+    position: fixed !important;
+    top: 30%;
+    width: 40px;
+    margin-top: 150px;
+    transition: all 0.6s linear;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4)
+}
+
+nav ul {
+    margin-top: 0;
+    margin-bottom: 0rem
+}
+
+nav li {
+    height: 45px;
+    position: relative
+}
+
+nav li a {
+    color: #333 !important;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 45px;
+    padding-left: 25%;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255,255, .4);
+    transition: all .3s linear;
+    text-decoration: none !important
+}
+
+nav li:nth-child(1) a {
+    background: #4267B2
+}
+
+nav li:nth-child(1) a, 
+nav li:nth-child(2) a, 
+nav li:nth-child(3) a, 
+nav li:nth-child(4) a, 
+nav li:nth-child(5) a, 
+nav li:nth-child(6) a {
+	background: #d8dee9
+}
+
+nav li a i {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 12px
+}
+
+ul li a span {
+    display: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+a:hover {
+    z-index: 1;
+    width: 200px;
+    border-bottom: 1px solid rgba(255, 255,255, .5);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4)
+
+}
+
+ul li:hover a span {
+    padding-left: 30% !important;
+    display: block;
+    font-size: 15px;
+}
+
+#top {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+}

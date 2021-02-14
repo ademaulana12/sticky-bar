@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sticky Bar - Social Media</title>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/f724858d1a.js" crossorigin="anonymous"></script>
+
+	<!-- CSS Custom -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="#facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+			<li><a href="#twitter"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+			<li><a href="#instagram"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+			<li><a href="#linkedin"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+			<li><a href="#youtube"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
+			<li><a href="#github"><i class="fab fa-github"></i><span>Github</span></a></li>
+		</ul>
+	</nav>
+	<button type="button" id="top" onclick="topFunction()"
+		class="position-absolute bottom-0 end-0 translate-middle btn btn-sm btn-secondary rounded-pill"
+		style="width: 2rem; height:2rem;"><i class="fas fa-arrow-up"></i></button>
+
+	<script>
+		topButton = document.getElementById("top"); // Get Id button
+		scrollDown = 20; //Event scroll down 20px
+
+		window.onscroll = function () { scrollFunction() };
+
+		// Visible Function for button scroll to top
+		function scrollFunction() {
+			if (document.body.scrollTop > scrollDown || document.documentElement.scrollTop > scrollDown) {
+				topButton.style.display = "block";
+			}
+			else {
+				topButton.style.display = "none";
+			}
+		}
+
+		// Unvisible Function for button scroll to top
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+
+</html>
